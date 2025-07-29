@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Reading Practice - Passage 2</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #dc3545;
+        }
+        .passage {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 4px solid #dc3545;
+            background-color: #f8f9fa;
+        }
+        .passage h2 {
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+        .questions {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .question {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .question-number {
+            font-weight: bold;
+            color: #dc3545;
+        }
+        .timer {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .instructions {
+            background-color: #f8d7da;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #dc3545;
+        }
+        input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 200px;
+        }
+        select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 210px;
+        }
+        .start-btn, .submit-btn {
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        .start-btn:hover, .submit-btn:hover {
+            background-color: #c82333;
+        }
+        .hidden {
+            display: none;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #d4edda;
+            border-radius: 5px;
+            border-left: 4px solid #28a745;
+        }
+        .matching-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 15px 0;
+        }
+        .options-list {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .options-list h4 {
+            margin-top: 0;
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer hidden" id="timer">Time: 20:00</div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>IELTS Academic Reading Practice</h1>
+            <p><strong>Passage 2 - Questions 14-26</strong></p>
+            <p>Recommended time: 20 minutes</p>
+        </div>
+
+        <div id="start-screen">
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p>• This is the second passage - questions are more challenging</p>
+                <p>• Read the passage carefully and answer all questions</p>
+                <p>• Pay attention to question types - some require matching</p>
+                <p>• Spelling must be correct for written answers</p>
+                <p>• Follow word limits strictly</p>
+            </div>
+            <button class="start-btn" onclick="startTest()">Start Practice Test</button>
+        </div>
+
+        <div id="test-content" class="hidden">
+            <div class="passage">
+                <h2>The Psychology of Decision-Making in Consumer Behavior</h2>
+                
+                <p><strong>A</strong> Consumer decision-making has long been viewed through the lens of rational economic theory, which assumes that individuals systematically evaluate all available options and select the alternative that maximizes their utility. However, mounting evidence from behavioral psychology and neuroscience reveals that human decision-making is far more complex and often irrational than traditional economic models suggest. The field of behavioral economics, pioneered by researchers such as Daniel Kahneman and Amos Tversky, has fundamentally challenged these assumptions by demonstrating how cognitive biases, emotional influences, and contextual factors systematically distort our judgment processes.</p>
+
+                <p><strong>B</strong> One of the most significant discoveries in this field is the concept of loss aversion, whereby individuals experience losses approximately twice as intensely as equivalent gains. This psychological principle has profound implications for consumer behavior and marketing strategies. For instance, retailers frequently frame discounts as "savings" rather than reduced prices, and insurance companies emphasize potential losses rather than the benefits of coverage. The endowment effect, closely related to loss aversion, describes how people ascribe higher value to items they already possess compared to identical items they do not own, which explains why free trials and money-back guarantees are such effective marketing tools.</p>
+
+                <p><strong>C</strong> Another crucial factor influencing consumer decisions is the availability heuristic, which causes people to overestimate the likelihood of events that are easily recalled from memory. This cognitive shortcut evolved as an efficient way to make quick decisions under uncertainty, but in modern consumer contexts, it can lead to systematic errors in judgment. Media coverage, personal experiences, and vivid advertisements all contribute to the accessibility of certain information, thereby skewing consumer perceptions of product quality, safety, or value. Companies exploit this tendency by creating memorable advertising campaigns and encouraging customer testimonials that make positive experiences more cognitively available.</p>
+
+                <p><strong>D</strong> The paradox of choice represents another fascinating aspect of consumer psychology. Psychologist Barry Schwartz's research demonstrates that while having options is generally preferred to having none, excessive choice can actually decrease satisfaction and increase anxiety. This phenomenon occurs because too many alternatives can overwhelm consumers' cognitive capacity, leading to decision paralysis, increased opportunity costs, and post-purchase regret. Successful retailers have learned to optimize their product ranges by offering enough variety to satisfy diverse preferences while avoiding the cognitive overload that comes with excessive options.</p>
+
+                <p><strong>E</strong> Social proof and conformity pressures also play pivotal roles in shaping consumer behavior. Robert Cialdini's principle of social proof suggests that people look to the behavior of others to guide their own actions, particularly in ambiguous situations. This explains the effectiveness of customer reviews, bestseller lists, and popularity indicators in online retail environments. The desire to conform extends beyond mere imitation; it reflects a fundamental human need for social acceptance and belonging. Marketing strategies that leverage social proof, such as displaying purchase counts or featuring user-generated content, tap into these deep-seated psychological drives.</p>
+
+                <p><strong>F</strong> Temporal factors introduce additional complexity to consumer decision-making processes. Present bias causes individuals to disproportionately weight immediate costs and benefits compared to future ones, even when the future consequences are objectively more significant. This tendency helps explain why consumers often choose cheaper, lower-quality products over more expensive alternatives that would provide better long-term value. Similarly, the planning fallacy leads people to underestimate the time, effort, and resources required to complete future tasks, which influences purchasing decisions related to home improvement, education, and personal development products.</p>
+
+                <p><strong>G</strong> Understanding these psychological principles has transformed modern marketing and retail strategies. Companies now employ behavioral insights to design choice architectures that guide consumers toward desired outcomes while preserving their sense of autonomy. This approach, known as "nudging," can be seen in various contexts: supermarkets position healthier foods at eye level, online retailers use progress bars to encourage purchase completion, and subscription services offer multiple tiers to make the middle option appear most attractive. As our understanding of consumer psychology continues to evolve, the ethical implications of applying these insights in commercial contexts remain a subject of ongoing debate among researchers, policymakers, and business practitioners.</p>
+            </div>
+
+            <div class="questions">
+                <h3>Questions 14-18</h3>
+                <div class="instructions">
+                    <p><strong>Choose the correct heading for each section from the list of headings below.</strong><br>
+                    Write the correct number <strong>i-x</strong> in boxes 14-18.</p>
+                </div>
+
+                <div class="matching-section">
+                    <div>
+                        <div class="question">
+                            <span class="question-number">14.</span> Section B
+                            <br><select id="q14">
+                                <option value="">Choose heading</option>
+                                <option value="i">i</option>
+                                <option value="ii">ii</option>
+                                <option value="iii">iii</option>
+                                <option value="iv">iv</option>
+                                <option value="v">v</option>
+                                <option value="vi">vi</option>
+                                <option value="vii">vii</option>
+                                <option value="viii">viii</option>
+                                <option value="ix">ix</option>
+                                <option value="x">x</option>
+                            </select>
+                        </div>
+
+                        <div class="question">
+                            <span class="question-number">15.</span> Section C
+                            <br><select id="q15">
+                                <option value="">Choose heading</option>
+                                <option value="i">i</option>
+                                <option value="ii">ii</option>
+                                <option value="iii">iii</option>
+                                <option value="iv">iv</option>
+                                <option value="v">v</option>
+                                <option value="vi">vi</option>
+                                <option value="vii">vii</option>
+                                <option value="viii">viii</option>
+                                <option value="ix">ix</option>
+                                <option value="x">x</option>
+                            </select>
+                        </div>
+
+                        <div class="question">
+                            <span class="question-number">16.</span> Section D
+                            <br><select id="q16">
+                                <option value="">Choose heading</option>
+                                <option value="i">i</option>
+                                <option value="ii">ii</option>
+                                <option value="iii">iii</option>
+                                <option value="iv">iv</option>
+                                <option value="v">v</option>
+                                <option value="vi">vi</option>
+                                <option value="vii">vii</option>
+                                <option value="viii">viii</option>
+                                <option value="ix">ix</option>
+                                <option value="x">x</option>
+                            </select>
+                        </div>
+
+                        <div class="question">
+                            <span class="question-number">17.</span> Section E
+                            <br><select id="q17">
+                                <option value="">Choose heading</option>
+                                <option value="i">i</option>
+                                <option value="ii">ii</option>
+                                <option value="iii">iii</option>
+                                <option value="iv">iv</option>
+                                <option value="v">v</option>
+                                <option value="vi">vi</option>
+                                <option value="vii">vii</option>
+                                <option value="viii">viii</option>
+                                <option value="ix">ix</option>
+                                <option value="x">x</option>
+                            </select>
+                        </div>
+
+                        <div class="question">
+                            <span class="question-number">18.</span> Section F
+                            <br><select id="q18">
+                                <option value="">Choose heading</option>
+                                <option value="i">i</option>
+                                <option value="ii">ii</option>
+                                <option value="iii">iii</option>
+                                <option value="iv">iv</option>
+                                <option value="v">v</option>
+                                <option value="vi">vi</option>
+                                <option value="vii">vii</option>
+                                <option value="viii">viii</option>
+                                <option value="ix">ix</option>
+                                <option value="x">x</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="options-list">
+                        <h4>List of Headings</h4>
+                        <p><strong>i</strong> The influence of time perception on purchasing decisions</p>
+                        <p><strong>ii</strong> How memory affects consumer judgment</p>
+                        <p><strong>iii</strong> The role of other people in decision-making</p>
+                        <p><strong>iv</strong> Problems caused by too many options</p>
+                        <p><strong>v</strong> The commercial application of psychological research</p>
+                        <p><strong>vi</strong> Why people fear losses more than they value gains</p>
+                        <p><strong>vii</strong> Traditional economic theories of consumer behavior</p>
+                        <p><strong>viii</strong> The evolution of behavioral economics</p>
+                        <p><strong>ix</strong> Cultural differences in decision-making</p>
+                        <p><strong>x</strong> The future of consumer psychology research</p>
+                    </div>
+                </div>
+
+                <h3>Questions 19-22</h3>
+                <div class="instructions">
+                    <p><strong>Complete the summary below.</strong><br>
+                    Choose <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer.</p>
+                </div>
+
+                <p>Traditional economic theory assumed that consumers make <strong>(19)</strong> _____________ decisions by evaluating all options. However, behavioral economics has shown that <strong>(20)</strong> _____________, emotions, and context significantly affect our choices. The concept of loss aversion means that people feel losses about <strong>(21)</strong> _____________ as strongly as gains of the same value. Companies use this knowledge by describing discounts as savings and using <strong>(22)</strong> _____________ and money-back guarantees to make products more appealing.</p>
+
+                <div class="question">
+                    <span class="question-number">19.</span> <input type="text" id="q19" placeholder="Your answer">
+                </div>
+                <div class="question">
+                    <span class="question-number">20.</span> <input type="text" id="q20" placeholder="Your answer">
+                </div>
+                <div class="question">
+                    <span class="question-number">21.</span> <input type="text" id="q21" placeholder="Your answer">
+                </div>
+                <div class="question">
+                    <span class="question-number">22.</span> <input type="text" id="q22" placeholder="Your answer">
+                </div>
+
+                <h3>Questions 23-26</h3>
+                <div class="instructions">
+                    <p><strong>Choose the correct letter, A, B, C or D.</strong></p>
+                </div>
+
+                <div class="question">
+                    <span class="question-number">23.</span> According to the passage, the availability heuristic can cause problems because:
+                    <br>A) People ignore statistical information completely
+                    <br>B) It makes people overestimate memorable events
+                    <br>C) Media coverage is always inaccurate
+                    <br>D) Personal experiences are unreliable
+                    <br><input type="text" id="q23" placeholder="A, B, C, or D">
+                </div>
+
+                <div class="question">
+                    <span class="question-number">24.</span> Barry Schwartz's research on the paradox of choice suggests that:
+                    <br>A) Consumers always prefer more options
+                    <br>B) Too many choices can reduce satisfaction
+                    <br>C) Decision-making speed improves with more options
+                    <br>D) Retailers should eliminate all product variety
+                    <br><input type="text" id="q24" placeholder="A, B, C, or D">
+                </div>
+
+                <div class="question">
+                    <span class="question-number">25.</span> Social proof is particularly effective when:
+                    <br>A) Products are expensive
+                    <br>B) Consumers are making repeat purchases
+                    <br>C) The situation is unclear or ambiguous
+                    <br>D) People are shopping alone
+                    <br><input type="text" id="q25" placeholder="A, B, C, or D">
+                </div>
+
+                <div class="question">
+                    <span class="question-number">26.</span> The main point of the final paragraph is that:
+                    <br>A) Nudging techniques are unethical
+                    <br>B) Consumer psychology research is complete
+                    <br>C) Companies are applying psychological insights commercially
+                    <br>D) Government regulation is necessary
+                    <br><input type="text" id="q26" placeholder="A, B, C, or D">
+                </div>
+
+                <button class="submit-btn" onclick="submitAnswers()">Submit Answers</button>
+            </div>
+
+            <div id="results" class="results hidden">
+                <h3>Results</h3>
+                <div id="score"></div>
+                <div id="feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let startTime;
+        let timerInterval;
+
+        function startTest() {
+            document.getElementById('start-screen').classList.add('hidden');
+            document.getElementById('test-content').classList.remove('hidden');
+            document.getElementById('timer').classList.remove('hidden');
+            
+            startTime = Date.now();
+            startTimer();
+        }
+
+        function startTimer() {
+            let timeLeft = 20 * 60; // 20 minutes in seconds
+            
+            timerInterval = setInterval(() => {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+                
+                document.getElementById('timer').textContent = 
+                    `Time: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    submitAnswers();
+                }
+                
+                timeLeft--;
+            }, 1000);
+        }
+
+        function submitAnswers() {
+            clearInterval(timerInterval);
+            
+            const answers = {
+                14: 'vi',
+                15: 'ii', 
+                16: 'iv',
+                17: 'iii',
+                18: 'i',
+                19: 'rational',
+                20: 'cognitive biases',
+                21: 'twice',
+                22: 'free trials',
+                23: 'B',
+                24: 'B',
+                25: 'C',
+                26: 'C'
+            };
+
+            let score = 0;
+            let feedback = [];
+
+            for (let i = 14; i <= 26; i++) {
+                let userAnswer;
+                if (i >= 14 && i <= 18) {
+                    userAnswer = document.getElementById(`q${i}`).value;
+                } else {
+                    userAnswer = document.getElementById(`q${i}`).value.trim();
+                }
+                
+                const correctAnswer = answers[i];
+                
+                if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                    score++;
+                    feedback.push(`<p><strong>Question ${i}:</strong> ✓ Correct - "${userAnswer}"`);
+                } else {
+                    feedback.push(`<p><strong>Question ${i}:</strong> ✗ Your answer: "${userAnswer}" | Correct answer: "${correctAnswer}"`);
+                }
+            }
+
+            const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+            const minutes = Math.floor(timeSpent / 60);
+            const seconds = timeSpent % 60;
+
+            document.getElementById('score').innerHTML = 
+                `<h4>Your Score: ${score}/13 (${Math.round(score/13*100)}%)</h4>
+                <p>Time taken: ${minutes}:${seconds.toString().padStart(2, '0')}</p>`;
+            
+            document.getElementById('feedback').innerHTML = feedback.join('');
+            document.getElementById('results').classList.remove('hidden');
+            
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
